@@ -27,7 +27,7 @@ public:
 
 	void push_at_end(Node* head, int value)
 	{
-		if(head->data==0){
+		if(head->data==-1){
 			head->data=value;
 		}else{
 			Node* ptr=head;
@@ -169,6 +169,7 @@ int main()
 	 
   	Node* head = new Node();
   	//inserting new node at the end of the linked list
+	head->data=-1;head->next=NULL;
   	node.push_at_end(head,1);
   	node.push_at_end(head,2);
   	node.push_at_end(head,3);
